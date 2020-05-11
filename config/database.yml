@@ -9,15 +9,15 @@ default: &default
 
 development:
  <<: *default
- database: anything-api-dev
+ database: whatscommerce-api-dev
 
 test:
  <<: *default
- database: anything-api-test
+ database: whatscommerce-api-test
 
 production:
  <<: *default
- database: anything-api-prod
+ database: whatscommerce-api-prod
 
 
 # # PostgreSQL. Versions 9.3 and up are supported.
