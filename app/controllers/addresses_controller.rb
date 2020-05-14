@@ -54,10 +54,6 @@ class AddressesController < ApplicationController
     params.permit(:cep, :street, :number, :neighborhood, :complement)
   end
 
-  def get_users_company
-    Company.where(owner: current_user).last
-  end
-
   def update_existing_address
     @address.update(
       cep: allowed_params['cep'] || @address.cep,
